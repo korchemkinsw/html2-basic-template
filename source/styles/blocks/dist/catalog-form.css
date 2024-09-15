@@ -1,0 +1,35 @@
+.catalog-form {
+  width: 280px;
+  height: 770px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 24px;
+}
+
+.catalog-form__group {
+  border: none;
+  padding: 0;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 10px;
+}
+
+.catalog-form__button-block {
+  width: 280px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.catalog-form__button {
+  width: 100%;
+  height: 40px;
+  padding: 8px 20px;
+}

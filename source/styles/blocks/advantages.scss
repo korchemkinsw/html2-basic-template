@@ -1,0 +1,148 @@
+.advantages__badge {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  @media (min-width: $breakpoint-medium) {
+    margin-top: 60px;;
+  }
+}
+
+.advantages__title {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.advantages__list {
+  margin-left: auto;
+  margin-right: auto;
+  list-style: none;
+  padding: 0;
+  height: 720px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  @media (min-width: $breakpoint-medium) {
+    width: 708px;
+    height: 422px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: left;
+    align-items: center;
+  }
+  @media (min-width: $breakpoint-large) {
+    width: 1360px;
+  }
+}
+
+.advantage{
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 280px;
+  height: 142px;
+  @media (min-width: $breakpoint-medium) {
+    width: 339px;
+    height: 94px;
+    padding: 0;
+    background-position: left;
+    background-size: 52px 52px;
+    text-align: left;
+  }
+  @media (min-width: $breakpoint-large) {
+    width: 318px;
+    height: 170px;
+    background-position: top;
+    text-align: center;
+  }
+  &--speed{
+    &::before{
+      content: "";
+      display: inline-block;
+      width: 56px;
+      height: 56px;
+      background-image: url("../../icons/speed.svg");
+      @media (min-width: $breakpoint-medium) {
+        position: absolute;
+      }
+      @media (min-width: $breakpoint-large) {
+        position: static;
+      }
+    }
+  }
+  &--comfort{
+    &::before{
+      content: "";
+      display: inline-block;
+      width: 56px;
+      height: 56px;
+      background-image: url("../../icons/comfort.svg");
+      @media (min-width: $breakpoint-medium) {
+        position: absolute;
+      }
+      @media (min-width: $breakpoint-large) {
+        position: static;
+      }
+    }
+  }
+  &--vivacity{
+    &::before{
+      content: "";
+      display: inline-block;
+      width: 56px;
+      height: 56px;
+      background-image: url("../../icons/vivacity.svg");
+      @media (min-width: $breakpoint-medium) {
+        position: absolute;
+      }
+      @media (min-width: $breakpoint-large) {
+        position: static;
+      }
+    }
+  }
+  &--ecology{
+    &::before{
+      content: "";
+      display: inline-block;
+      width: 56px;
+      height: 56px;
+      background-image: url("../../icons/ecology.svg");
+      @media (min-width: $breakpoint-medium) {
+        position: absolute;
+      }
+      @media (min-width: $breakpoint-large) {
+        position: static;
+      }
+    }
+  }
+}
+
+.advantage__title{
+  margin: 0;
+  @media (min-width: $breakpoint-medium) {
+    width: 267px;
+    height: 36px;
+    margin-left: 80px;
+  }
+  @media (min-width: $breakpoint-large) {
+    margin-top: 24px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.advantage__text{
+  margin-top: 10px;
+  @media (min-width: $breakpoint-medium) {
+    width: 267px;
+    margin-left: 80px;
+  }
+  @media (min-width: $breakpoint-large) {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

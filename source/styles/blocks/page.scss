@@ -1,0 +1,18 @@
+.page {
+  min-width: 320px;
+  height: 100%;
+  font-family: $font-site;
+  font-size: 14px;
+  line-height: 20px;
+  color: $base-black;
+  background-color: $base-white;
+
+  @media (min-width: $breakpoint-medium) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  @media (min-width: $breakpoint-large) {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}

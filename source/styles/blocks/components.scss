@@ -1,0 +1,51 @@
+.badge {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $base-primary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (min-width: $breakpoint-medium) {
+    font-size: 12x;;
+    line-height: 16px;;
+  }
+}
+
+.button {
+  border-radius: 4px 0px 0px 0px;
+  color: $base-white;
+  background-color: $base-primary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  &--secondary{
+    color: $base-primary;
+    background-color: $base-white;;
+  }
+  &:hover, :focus{
+    color: $base-white;
+    background-color: $primary-lighter;
+  }
+  &:active{
+    color: $base-white;
+    background-color: $primary-darker;
+  }
+  &disabled{
+    color: $base-white;
+    background-color: $base-grey;
+  }
+}
+
+.section-title{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  margin: 0;
+  @media (min-width: $breakpoint-medium) {
+    font-size: 42px;
+    line-height: 64px;
+  }
+}

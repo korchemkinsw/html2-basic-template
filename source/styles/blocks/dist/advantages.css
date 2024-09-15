@@ -1,0 +1,46 @@
+.advantages__badge {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.advantages__title {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.advantages__list {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.advantage {
+  margin-left: auto;
+  margin-right: auto;
+  width: 280px;
+  height: 142px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 52px 56px;
+  padding-top: 50px;
+}
+.advantage--speed {
+  background-image: url("../../icons/speed.svg");
+}
+.advantage--comfort {
+  background-image: url("../../icons/comfort.svg");
+}
+.advantage--vivacity {
+  background-image: url("../../icons/vivacity.svg");
+}
+.advantage--ecology {
+  background-image: url("../../icons/ecology.svg");
+}

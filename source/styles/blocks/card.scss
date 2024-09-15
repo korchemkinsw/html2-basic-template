@@ -1,0 +1,69 @@
+.card {
+  width: 240px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  height: 400px;
+  grid-template-areas: "card-link card-link"
+                       "title title"
+                       "description description"
+                       "price card-button";
+  @media (min-width: $breakpoint-large) {
+    width: 317px;
+    height: 460;
+  }
+}
+
+.card__link {
+  grid-area: card-link;
+  height: 200px;
+}
+
+.card__title{
+  margin: 0;
+  padding: 0;
+  grid-area: title;
+  height: 32px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: left;
+}
+
+.card__description {
+  margin: 0;
+  padding: 0;
+  grid-area: description;
+  height: 60px;
+  text-align: left;
+}
+
+.card__price {
+  margin: 0;
+  padding: 0;
+  grid-area: price;
+  height: 32px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: left;
+}
+
+.card__button {
+  position: relative;
+  grid-area: card-button;
+  width: 131px;
+  height: 36px;
+  margin-left: auto;
+  padding: 8px 0px 8px 20px;
+  &::before{
+    content: "";
+    width: 20px;
+    height: 16px;
+    position: absolute;
+    top: auto;
+    bottom: auto;
+    left: 20px;
+    background-image: url("../../icons/Buttons/basket-plus.svg");
+  }
+}

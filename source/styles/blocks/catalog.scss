@@ -1,0 +1,163 @@
+.catalog {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.catalog__badge {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+}
+
+.catalog__title {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.catalog__container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  @media (min-width: $breakpoint-medium) {
+    width: 728px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media (min-width: $breakpoint-large) {
+    width: 1360px;
+    display: grid;
+    grid-template-areas: "catalog-form catalog-sort"
+                         "catalog-form catalog"
+                         "catalog-form pagination";
+  }
+}
+
+.catalog__catalog-form{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  @media (min-width: $breakpoint-large) {
+    grid-area: catalog-form;
+  }
+}
+
+.catalog__sort-list{
+  width: 280px;
+  height: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  border: none;
+  @media (min-width: $breakpoint-medium) {
+    margin-right: 0;;
+  }
+  @media (min-width: $breakpoint-large) {
+    grid-area: catalog-sort;
+  }
+}
+
+.catalog__sort-list-field {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.catalog__sort-list-lead {
+  height: 24px;
+}
+
+.sort-list-options{
+  width: 165px;
+  height: 24px;
+  color: $base-primary;
+}
+
+.catalog__list {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  @media (min-width: $breakpoint-medium) {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  @media (min-width: $breakpoint-large) {
+    grid-area: catalog;
+  }
+}
+
+.catalog__item{
+  width: 280px;
+  height: 420px;
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  @media (min-width: $breakpoint-medium) {
+    width: 349px;
+    height: 440px;
+  }
+  @media (min-width: $breakpoint-large) {
+    width: 317px;
+    height: 460px;
+  }
+}
+
+.catalog__pagination {
+  width: 280px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  @media (min-width: $breakpoint-medium) {
+    margin-right: 0;
+    width: 395px;
+  }
+}
+
+.catalog__page-button {
+  height: 40px;
+  min-width: 40px;
+}
+
+.page-button{
+  @media (max-width: $breakpoint-small-down) {
+    span {
+      display: none;
+    }
+  }
+  border: none;
+  background-color: inherit;
+  color: $base-primary;
+  &--current{
+    color: $base-black;
+  }
+  &--prew{
+    @media (max-width: $breakpoint-small-down) {
+      &::before{
+        content: "<";
+      }
+    }
+  }
+  &--next{
+    @media (max-width: $breakpoint-small-down) {
+      &::before{
+        content: ">";
+      }
+    }
+  }
+}

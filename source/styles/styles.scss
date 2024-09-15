@@ -3,5 +3,25 @@
 @import "./common/global.scss";
 @import "./common/fonts.scss";
 
+/* библиотека стилей интерактивной карты */
+@import "../leaflet/leaflet";
+
+/* библиотека NoUniSlider */
+@import "../nouislider/nouislider";
+
 /* BLOCKS */
-@import "./blocks/header.scss";
+@import "./blocks/components.scss";
+@import "./blocks/page.scss";
+@import "./blocks/page-header.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/site-menu.scss";
+@import "./blocks/user-menu.scss";
+@import "./blocks/page-main.scss";
+@import "./blocks/slider.scss";
+@import "./blocks/slide.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/catalog-form.scss";
+@import "./blocks/form-group.scss";
+@import "./blocks/card.scss";
+@import "./blocks/page-footer.scss";

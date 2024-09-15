@@ -1,0 +1,48 @@
+.page-header__nav {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $breakpoint-medium) {
+    height: 80px;
+  }
+}
+
+.page-header__logo {
+  width: 32px;
+  height: 36px;
+  margin-top: 12px;
+  margin-left: 20px;
+  cursor: pointer;
+  text-decoration: none;
+
+  @media (min-width: $breakpoint-medium) {
+    width: 82px;
+    height: 36px;
+    margin-top: 22px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    width: 320px;
+    height: 36px;
+    figure {
+      display: flex;
+      gap: 24;
+    }
+  }
+}
+
+.page-header__menu {
+  width: 200px;
+  height: 60px;
+
+  @media (min-width: $breakpoint-medium) {
+    width: 646px;
+    height: 60px;
+  }
+  @media (min-width: $breakpoint-medium) {
+    width: 1080px;
+    height: 80px;
+  }
+}

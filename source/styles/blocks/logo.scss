@@ -1,0 +1,21 @@
+.logo__image {
+  width: inherit;
+  height: inherit;
+  @media (min-width: $breakpoint-large) {
+    width: 170px;
+    height: 36px;
+  }
+}
+
+.logo__text {
+  display: none;
+  @media (min-width: $breakpoint-large) {
+    display: inline-block;
+    width: 126px;
+    height: 32px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: $base-black;
+  }
+}
